@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Midterm</title>
+  <link rel="stylesheet" type="text/css" href="css/map.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,900;1,400&family=Roboto&display=swap" rel="stylesheet">
+  
+  <script src="js/map.js" defer></script>
+</head>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href=" ">Map</a></li>
+    <li><a href=" ">Information</a></li>
+    <li><a href=" ">About</a></li>
+  </ul>
+  <button onclick="playPause()">Play/Pause</button> 
+
+  <div id="content">
+    <div class="title"><h1>The Coronavirus Disease</h1></div>
+    <div class="map">
+      <video id="video" src="images/map-test.mp4"  preload>
+      </video>
+    </div>      
+
+    <div class="aside" id="countries">
+      <a href="#" data-btn="country-china" id="china">China</a>
+      <a href="#" data-btn="country-italy" id="italy">Italy</a>
+      <a href="#" data-btn="country-usa" id="usa">USA</a>
+      <a href="#" data-btn="country-south" id="south" >South Korea</a>
+      <div class="hide" id="country-china">
+        <h1>China</h1>
+        <div class="row">
+          <div class="column">
+            <h2>Cases</h2>
+            <p>81,639</p>
+          </div>
+          <div class="column">
+            <h2>Deaths</h2>
+            <p>3,326</p>
+          </div>
+          <div class="column">
+            <h2>Recovered</h2>
+            <p>76,755</p>
+          </div>
+          <div class="column">
+            <h2>Active Cases</h2>
+            <p>1,558</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide" id="country-usa">
+        <h1>USA</h1>
+        <div class="row">
+          <div class="column">
+            <h2>Cases</h2>
+            <p>277,522</p>
+          </div>
+          <div class="column">
+            <h2>Deaths</h2>
+            <p>7,403</p>
+          </div>
+          <div class="column">
+            <h2>Recovered</h2>
+            <p>12,283</p>
+          </div>
+          <div class="column">
+            <h2>Active Cases</h2>
+            <p>257,836</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hide" id="country-italy">
+        <h1>ITALY</h1>
+        <div class="row">
+          <div class="column">
+            <h2>Cases</h2>
+            <p>119,827</p>
+          </div>
+          <div class="column">
+            <h2>Deaths</h2>
+            <p>14,681</p>
+          </div>
+          <div class="column">
+            <h2>Recovered</h2>
+            <p>19,758</p>
+          </div>
+          <div class="column">
+            <h2>Active Cases</h2>
+            <p>85,388</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="text">
+  </div>
+</body>
+</html>

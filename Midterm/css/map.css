@@ -1,0 +1,139 @@
+h1, li {
+  font-family: 'Overpass', sans-serif;
+  color: white;
+}
+
+/* Nav Bar -Start- */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #b30000;
+}
+
+.active {
+  background-color: #b30000;
+}
+/* Nav Bar -End- */
+
+h1, h3 {
+  text-align: center;
+}
+
+.title h1 {
+  padding-top: 5vh;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding-top: 35vh;
+}
+
+body {
+  background-color: rgb(30, 30, 47);
+}
+
+.column p{
+  font-weight: bolder;
+}
+
+.map {
+  float: left;
+  width: 60%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.column {
+  border-radius: 12px;
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 10vh; 
+  background: #444470;
+  color: white;
+}
+
+.column, .row {
+  margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hide{
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aside  {
+  float: right;
+  width: 35%;
+    overflow: hidden;
+
+}
+
+.set-height  {
+  display: block;
+  height: 13500px;
+}
+
+.aside a {
+    background-color: #333357;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#video {
+height: 730px;
+}
+
+button {
+  position:relative;
+  top: 13vh;
+}
+
+#country-italy h1{
+text-align: left;
+}
+#country-china h1{
+text-align: left;
+}
+#country-usa h1{
+text-align: left;
+}
+#country-germany h1{
+text-align: left;
+}
+#country-spain h1{
+text-align: left;
+}
+
+
+img {
+  height: 30px;
+}

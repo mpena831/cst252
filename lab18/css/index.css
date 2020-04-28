@@ -1,0 +1,23 @@
+h1, h2, h3{
+	font-family: 'Sigmar One', cursive;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	color: white;
+}
+
+.row {
+	padding-top: 30px;
+	padding-bottom: 100vh;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+}

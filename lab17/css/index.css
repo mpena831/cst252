@@ -1,0 +1,48 @@
+.change1 p{
+	color: green;
+	font-size: 150%;
+	transition: 1s;
+}
+
+.change2 p{
+	color: yellow;
+	font-size: 200%;
+	transition: 1s;
+}
+
+.change3 p{
+	color: red;
+	font-size: 250%;
+	transition: 1s;
+}
+
+h1, h2, h3{
+	font-family: 'Sigmar One', cursive;
+	color: white;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	color: white;
+}
+
+h2 {
+	border-left: 6px solid pink;
+	padding-left: 5px;
+}
+
+div {
+	color: white;
+}
+
+.text {
+	border: 2px solid lightgrey;
+	background-color:  rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	padding: 15px;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+}

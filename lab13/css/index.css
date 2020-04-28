@@ -1,0 +1,41 @@
+h1, h2, h3{
+	font-family: 'Sigmar One', cursive;
+	color: white;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	color: white;
+}
+
+h2 {
+	border-left: 6px solid indianred;
+	padding-left: 5px;
+}
+
+img {
+	height: 80vh;
+	/*position: relative;*/
+	top: -40vh;
+}
+
+div {
+	color: white;
+}
+
+.text {
+	border: 2px solid lightgrey;
+	background-color:  rgba(0, 0, 0, 0.4);
+	border-radius: 8px;
+	padding: 15px;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+}
+
+#output {
+	column-count: 4;
+	padding-bottom: 5vh;
+}

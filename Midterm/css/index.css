@@ -1,0 +1,52 @@
+h1, li {
+	font-family: 'Overpass', sans-serif;
+	color: white;
+}
+
+/* Nav Bar -Start- */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #b30000;
+}
+
+.active {
+  background-color: #b30000;
+}
+/* Nav Bar -End- */
+
+h1, h3 {
+	text-align: center;
+}
+
+h1 {
+	padding-top: 30vh;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding-top: 35vh;
+}
+
+body {
+	background-color: rgb(30, 30, 47);
+}
