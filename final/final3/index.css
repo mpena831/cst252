@@ -1,0 +1,13 @@
+h1, li {
+  font-family: 'Overpass', sans-serif;
+  font-size: 45pt;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+body {
+  background-color: rgb(30, 30, 47);
+}
+
