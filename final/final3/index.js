@@ -20,11 +20,16 @@
   var settings = {
   "url": "https://api.covid19api.com/summary",
   "method": "GET",
+<<<<<<< HEAD
   "timeout": 0,
+=======
+  "data": { }
+>>>>>>> 02d1664fe282b36b285322b82c9f6b7c57740687
 };
 
 $.ajax(settings).done(function (response) {
   console.log(response);
+<<<<<<< HEAD
   var nop = response.Countries[0];
   console.log(nop);
 
@@ -38,4 +43,7 @@ $.ajax(settings).done(function (response) {
     $("#recovered").html(tRecovered);
     $("#new").html(nConfirmed);
 
+=======
+  $("#output").html("<p>" + data.message + "</p>")
+>>>>>>> 02d1664fe282b36b285322b82c9f6b7c57740687
 });
