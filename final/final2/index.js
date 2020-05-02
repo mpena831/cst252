@@ -1,24 +1,55 @@
+//   var settings = {
+//   "url": "https://api.covid19api.com/summary",
+//   "method": "GET",
+//   "timeout": 0,
+//   "data": { }
+// };
+
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+//   // var nop = response.Countries[0];
+//   // console.log(nop);
+
+//     var tCases = response.Global.TotalConfirmed.toLocaleString();
+//     var nConfirmed = response.Global.NewConfirmed.toLocaleString();
+//     var tDeaths = response.Global.TotalDeaths.toLocaleString();
+//     var tRecovered = response.Global.TotalRecovered.toLocaleString();
+
+//     // $("#cases").html(tCases);
+//     // $("#deaths").html(tDeaths);
+//     // $("#recovered").html(tRecovered);
+//     // $("#new").html(nConfirmed);
+// });
+
 new svgMap({
+
+
   targetElementID: 'svgMap',
   data: {
     data: {
-      gdp: {
-        name: 'GDP per capita',
-        format: '{0} USD',
+      cases: {
+        name: 'Confirmed',
+        format: '{0}',
         thousandSeparator: ',',
         thresholdMax: 50000,
         thresholdMin: 1000
       },
-      change: {
-        name: 'Change to year before',
-        format: '{0} %'
-      }
+      deaths: {
+        name: 'Deaths',
+        format: '{0}'
+      },
+      recovered: {
+        name: 'Recovered',
+        format: '{0}'
+      },
     },
-    applyData: 'gdp',
+    applyData: 'cases',
     values: {
-      AF: {gdp: 587, change: 4.73},
-      AL: {gdp: 4583, change: 11.09},
-      DZ: {gdp: 4293, change: 10.01}
+      AF: {cases: 7000, deaths: 12 , recovered: 222},
+      AL: {cases: 7000, deaths: 12 , recovered: 222},
+      DZ: {cases: 7000, deaths: 12, recovered: 222},
+      CN: {cases: 123, deaths: 12, recovered: 222},
+      MX: {cases: 7000, deaths: 12, recovered: 222}
       // ...
     }
   }
