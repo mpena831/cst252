@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-$.ajax() {
-  url: "https://api.covid19api.com/summary",
-  type: "GET",
-  success: function(data){
-    // write global data to global div
-    var globalObj = data.Global;
-    console.log("New Confirmed Cases", globalObj.NewConfirmed);
-
-=======
   var settings = {
   "url": "https://api.covid19api.com/summary",
   "method": "GET",
@@ -29,7 +19,6 @@ $.ajax(settings).done(function (data) {
   //   $("#new").html(nConfirmed);
   var globalObj = data.Global;
     console.log("New Confirmed Cases", globalObj.NewConfirmed);
->>>>>>> c4691ab936adf0e78d374b7809a911f788493c64
     // api format:
     // [
     //  {
@@ -53,8 +42,6 @@ $.ajax(settings).done(function (data) {
     //  NewRecovered: 0,
     //  TotalRecovered: 0
     // },
-<<<<<<< HEAD
-=======
     // parse country data and construct structure for svgmap
     var countryObjArray = data.Countries;
     console.log("First country object:", countryObjArray[0]);
@@ -102,21 +89,7 @@ $.ajax(settings).done(function (data) {
 });
 
 new svgMap({
->>>>>>> c4691ab936adf0e78d374b7809a911f788493c64
 
-    // parse country data and construct structure for svgmap
-    var countryObjArray = data.Countries;
-    console.log("First country object:", countryObjArray[0]);
-    console.log("First country:", countryObjArray[0].Country);
-    var mapCountryObj = {};
-    for (i=0; i < countryObjArray.length; i++) {
-      // use country code as key to map obj
-      var thisKey = countryObjArray[i].CountryCode;
-      mapCountryObj[thisKey].TotalConfirmed = countryObjArray[i].TotalConfirmed;
-      . . . do this 5 mo times
-    }
-    // generate map w svgmap
-  new svgMap({
 
   targetElementID: 'svgMap',
   data: {
@@ -144,9 +117,3 @@ new svgMap({
     }
   }
 });
-    //
-    // values: mapCountryObj;
-    // render map
-  }
-}
-
